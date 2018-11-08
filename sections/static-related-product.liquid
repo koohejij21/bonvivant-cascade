@@ -1,0 +1,26 @@
+{% if section.settings.show_related_products %}
+{% assign section_color = section.settings.related_products_color_scheme %}
+{% include 'global-variables' %}
+<div id="shopify-section-{{ section.id }}-related-products" class="shopify-section" data-related-products>
+    {% include 'related-products' %}
+</div>
+{% endif %}
+
+
+{% schema %}
+  {
+    "name": "Related products",
+    "settings": [
+       {
+          "type": "select",
+          "id": "related_products_color_scheme",
+          "label": "Color scheme",
+          "options": [
+             { "value": "primary", "label": "Primary"},
+             { "value": "secondary ", "label": "Secondary"},
+             { "value": "tertiary", "label": "Tertiary"}
+          ]
+       }
+    ]
+  }
+{% endschema %}

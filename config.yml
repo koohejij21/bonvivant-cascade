@@ -1,0 +1,19 @@
+development:
+  password: 2799c6bfb5abd9cd95fa2f511673f866
+  theme_id: "32395165753"
+  store: bon-vivant-food.myshopify.com
+  ignore_files:
+    - "*.gif"
+    - "*.jpg"
+    - config/settings_data.json
+production:
+  password: 2799c6bfb5abd9cd95fa2f511673f866
+  theme_id: "32395165753"
+  store: bon-vivant-food.myshopify.com
+  timeout: 60s
+  readonly: true
+test:
+  password: 2799c6bfb5abd9cd95fa2f511673f866
+  theme_id: "32395165753"
+  store: bon-vivant-food.myshopify.com
+  ignores: ignore.txt
